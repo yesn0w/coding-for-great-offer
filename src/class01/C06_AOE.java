@@ -125,7 +125,7 @@ public class C06_AOE {
             if (curHp > 0) {
                 res += curHp;
                 // todo: 为什么这里应该是 cover[i - 1] + 1, 为什么要 +1？
-                // 暂定答案：因为所有的坐标都右移了一位，所以要加1
+                // 答案：因为所有的坐标都右移了一位，所以要加1
                 st.add(i, cover[i - 1], (int)-curHp, 1, hp.length, 1);
             }
         }
